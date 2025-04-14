@@ -1,0 +1,25 @@
+# 忽略所有项目的 build 目录和中间文件
+**/build/
+**/out/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/Makefile
+**/install_manifest.txt
+**/.ninja_log
+**/.ninja_deps
+
+# 可执行文件 & 目标文件
+**/*.exe
+**/*.obj
+**/*.pdb
+**/*.ilk
+**/*.log
+
+# VS 或 VSCode 生成的文件
+**/.vs/
+**/.vscode/
+**/*.VC.db
+**/*.suo
+**/*.user
+
