@@ -148,7 +148,7 @@ void rst::rasterizer::rasterize_triangle(const Triangle& t) {
         for (int y = ymin; y < ymax; ++y) {
             float min_dep = FLT_MAX;
             
-            bool MSAA = true;//开启反走样
+            bool MSAA = false;//开启反走样
 
             //4×MSAA的实现
             if (MSAA) {

@@ -13,8 +13,10 @@ add_executable(Homework3
     Texture.cpp
 )
 
-target_link-libraries(Homework3 PRIVATE ${OpenCV_LIBS})
+target_link_libraries(Homework3 PRIVATE ${OpenCV_LIBS})
 target_include_directories(Homework3 PRIVATE
     ${OpenCV_INCIUDE_DIRS}
-    ${EIGEN3-INCLUDE_DIRS}
+    ${EIGEN3_INCLUDE_DIRS}
 )
+
+file(COPY ${PROJECT_SOURCE_DIR}/models/ DESTINATION ${PROJECT_BINARY_DIR}/../models/)
