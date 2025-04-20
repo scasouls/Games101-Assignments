@@ -15,7 +15,7 @@ add_executable(Homework3
 
 target_link_libraries(Homework3 PRIVATE ${OpenCV_LIBS})
 target_include_directories(Homework3 PRIVATE
-    ${OpenCV_INCIUDE_DIRS}
+    ${OpenCV_INCLUDE_DIRS}
     ${EIGEN3_INCLUDE_DIRS}
 )
 

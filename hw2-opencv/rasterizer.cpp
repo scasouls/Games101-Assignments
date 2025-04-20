@@ -148,10 +148,10 @@ void rst::rasterizer::rasterize_triangle(const Triangle& t) {
         for (int y = ymin; y < ymax; ++y) {
             float min_dep = FLT_MAX;
             
-            bool MSAA = false;//开启反走样
+            bool SSAA = false;//开启反走样
 
             //4×MSAA的实现
-            if (MSAA) {
+            if (SSAA) {
                 float pixel4 = 0;
                 float count = 0;
                 for (int i = 0.25; i < 1.0; i+=0.5) {
